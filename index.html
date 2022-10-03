@@ -23,13 +23,14 @@
 </head>
 
 <body>
+    <a name="top"></a>
     <div id="header">
         <button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>
         <header>
             <div class="land__container main-menu">
                 <div class="align-items-center justify-content-between d-flex">
                     <div id="logo">
-                        <a href="index.html"><img src="img/logo.svg" class="logo__head" alt="" title=""></a>
+                        <a href="#top"><img src="img/logo.svg" class="logo__head" alt="" title=""></a>
                     </div>
                     <nav id="nav-menu-container">
                         <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
@@ -556,23 +557,6 @@
 
     <!-- MODAL  -->
 
-    <!-- <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="callModal">Оставьте заявку</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="callModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -596,6 +580,10 @@
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control rounded-left" placeholder="Ваш телефон">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" class="form-control rounded-left" cols="30" rows="4"
+                                placeholder="Ваши пожелания"></textarea>
                         </div>
                         <div class="form-group d-flex justify-content-center">
                             <div class="modal__btn">
