@@ -669,6 +669,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300
 }
 
+.logo__head {
+    height: 30px;
+}
+
 @media (max-width:991.98px) {
     .single-footer-widget {
         margin-bottom: 30px
