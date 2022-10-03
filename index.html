@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./style/owl.theme.default.min.css">
     <script src="https://kit.fontawesome.com/985494719d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/modal.css">
 
     <script src="https://inorganik.github.io/countUp.js/dist/countUp.umd.js"></script>
 
@@ -32,12 +33,13 @@
                     </div>
                     <nav id="nav-menu-container">
                         <ul class="nav-menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#serv">Услуги</a></li>
+                            <li><a href="#works">Работы</a></li>
+                            <li><a href="#feed">Отзывы</a></li>
+                            <li><a href="#prices">Цены</a></li>
 
-                            <li><a href="#">Связяться</a></li>
+                            <li class="modal__link"><a data-bs-toggle="modal" data-bs-target="#callModal">Связяться</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -64,27 +66,9 @@
         </div>
 
 
-        <div class="land__container">
-            <div class="about pt-120">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-6 col-md-6 home-about-left">
-                        <img src="./img/about.webp" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-lg-5 col-md-6 home-about-right">
-                        <h6>About Me</h6>
-                        <h1 class="text-uppercase">Personal Details</h1>
-                        <p>Here, I focus on a range of items and features that we use in life without giving them a
-                            second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco.</p>
-                        <a href="#" class="primary-btn text-uppercase">View Full Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <div class="land__container">
+            <a name="serv"></a>
             <div class="services section-gap">
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content col-lg-7">
@@ -175,8 +159,10 @@
 
 
         <section class="facts-area section-gap" id="facts-area">
+
             <div class="land__container">
                 <div class="row">
+
                     <div class="col-lg-3 col-md-6 single-fact">
                         <h1 class="counter" id="aboutnumbers1" data-max="2356">2536</h1>
                         <p>Projects Completed</p>
@@ -196,8 +182,9 @@
                 </div>
             </div>
         </section>
-
+        <a name="works"></a>
         <section class="portfolio-area section-gap" id="portfolio">
+
             <div class="land__container">
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-70 col-lg-8">
@@ -330,8 +317,9 @@
                 </div>
             </div>
         </section>
-
+        <a name="feed"></a>
         <section class="testimonial-area section-gap">
+
             <div class="land__container">
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-70 col-lg-8">
@@ -405,8 +393,9 @@
         </section>
 
 
-
+        <a name="prices"></a>
         <section class="price-area section-gap">
+
             <div class="land__container">
                 <div class="row d-flex justify-content-center">
                     <div class="menu-content pb-70 col-lg-8">
@@ -562,6 +551,62 @@
             </div>
         </div>
     </footer>
+
+
+
+    <!-- MODAL  -->
+
+    <!-- <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="callModal">Оставьте заявку</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="callModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close d-flex align-items-center justify-content-center"
+                        data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="ion-ios-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body p-4 p-md-5">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <span class=""><img src="./img/logo.svg" alt=""></span>
+                    </div>
+                    <h3 class="text-center mb-4 mt-4">Связаться</h3>
+                    <form action="#" class="login-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-left" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-left" placeholder="Ваша почта">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control rounded-left" placeholder="Ваш телефон">
+                        </div>
+                        <div class="form-group d-flex justify-content-center">
+                            <div class="modal__btn">
+                                <a href="#" class="primary-btn text-uppercase">Оставить заявку</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
