@@ -686,7 +686,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo__head {
-    height: 30px;
+    height: 43px;
+}
+
+.logo__modal {
+    height: 120px;
 }
 
 @media (max-width:991.98px) {
