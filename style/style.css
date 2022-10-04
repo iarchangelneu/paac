@@ -707,10 +707,6 @@ h1, h2, h3, h4, h5, h6 {
     .main {
         margin-top: 50px;
     }
-
-    .logo__head {
-        height: 30px;
-    }
 }
 
 .single-footer-widget .footer-social a {
