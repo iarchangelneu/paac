@@ -34,7 +34,7 @@ h1 {
 
 .banner-left h1 {
     margin: 20px 0;
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
 }
 
@@ -44,7 +44,7 @@ h1 {
     background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
 }
 
-.banner-left .primary-btn, .modal__btn .primary-btn {
+.banner-left .primary-btn, .modal__btn .primary-btn, .feed__button .primary-btn {
     background: -webkit-linear-gradient(0deg, #eabc3a 0%, #eadb3a 100%);
 }
 
@@ -52,7 +52,7 @@ h1 {
     text-decoration: none;
 }
 
-.banner-left .primary-btn:hover, .modal__btn .primary-btn:hover {
+.banner-left .primary-btn:hover, .modal__btn .primary-btn:hover, .feed__button .primary-btn:hover {
     text-decoration: none;
     color: #fff;
     box-shadow: rgb(217, 255, 0) 0px 20px 30px -10px;
@@ -560,6 +560,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .price-area .single-price:hover .bottom-part h1 {
     display: none
+}
+
+.bottom-part h1 {
+    font-size: 25px;
 }
 
 .price-area .single-price:hover .bottom-part .price-btn {
